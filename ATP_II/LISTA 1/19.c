@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <ctype.h> /* Para a função isupper()*/
+#include <ctype.h> /* Para a funÃ§Ã£o isupper()*/
 
 int main(){
    float array[8]={1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0};
@@ -12,9 +12,9 @@ int main(){
    for(int i=0;i<8;i++){
       soma += *(ponteiro + i);
 
-      /*qual a diferença de usar e não usar Aritmética de ponteiros?
-      quando usa o descolcamento é calculado ex:*(ponteiro + i)
-      quando n usa só muda o valor do endereço ex: p++  */
+      /*qual a diferenÃ§a de usar e nÃ£o usar AritmÃ©tica de ponteiros?
+      quando usa o descolcamento Ã© calculado ex:*(ponteiro + i)
+      quando n usa sÃ³ muda o valor do endereÃ§o ex: p++  */
    }
 
    printf("Soma dos elementos: %.2f\n", soma/8.0);
