@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <ctype.h> /* Para a função isupper()*/
+#include <ctype.h> /* Para a funÃ§Ã£o isupper()*/
 
 int main(){
    char array[10];
@@ -11,8 +11,8 @@ int main(){
    for(int i=0;i<10;i++){
        printf("Didite o %d caractere: ", i+1);
        scanf(" %c", &array[i]);
-       /*Quando você lê caracteres, o scanf também pega o \n (Enter) que o usuário digita.
-    Para evitar isso, coloque um espaço antes do %c no formato: " %c".*/
+       /*Quando vocÃª lÃª caracteres, o scanf tambÃ©m pega o \n (Enter) que o usuÃ¡rio digita.
+    Para evitar isso, coloque um espaÃ§o antes do %c no formato: " %c".*/
    }
 
    for(int i=0;i<10;i++){
@@ -21,6 +21,6 @@ int main(){
        }
         ponteiro++;
    }
-    printf("Quantidade de letras maiúsculas: %d\n", contador);
+    printf("Quantidade de letras maiÃºsculas: %d\n", contador);
 
 }
