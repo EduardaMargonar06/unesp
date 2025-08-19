@@ -6,7 +6,7 @@ int vetor[5], vetor_inve[5], num;
 int i=0, j=0;
 
 for(i=0;i<5;i++){
-    printf("Digite o %dº numero: ", i+1);
+    printf("Digite o %dÂº numero: ", i+1);
     scanf("%d", &num);
 
     vetor[i]=num;
