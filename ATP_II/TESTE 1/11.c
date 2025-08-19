@@ -2,11 +2,11 @@
 #include <stdlib.h>
 #include <time.h>
 
-void achar_max(int *vetor, int *max){ /*usar void qnd não vai retornar nenhum número*/
+void achar_max(int *vetor, int *max){ /*usar void qnd nÃ£o vai retornar nenhum nÃºmero*/
     int i;
     *max = vetor[0];
-    /* Quando você passa um ponteiro para uma variável, está passando o endereço dela.
-    Aí a função pode acessar e modificar diretamente o conteúdo na memória dessa variável original.*/
+    /* Quando vocÃª passa um ponteiro para uma variÃ¡vel, estÃ¡ passando o endereÃ§o dela.
+    AÃ­ a funÃ§Ã£o pode acessar e modificar diretamente o conteÃºdo na memÃ³ria dessa variÃ¡vel original.*/
     for(i=0; i< 15; i++){
         if(vetor[i]>*max){
             *max = vetor[i];
@@ -27,5 +27,5 @@ int main(){
 
     achar_max(array, &max);
 
-    printf("\nO maior número é: %d ", max);
+    printf("\nO maior nÃºmero Ã©: %d ", max);
 }
