@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <ctype.h> /* Para a função isupper()*/
+#include <ctype.h> /* Para a funÃ§Ã£o isupper()*/
 
 int main(){
    char array[12]={'a','b','c','d','e','f','g','h','i','j','k','l'}, invert[12];
