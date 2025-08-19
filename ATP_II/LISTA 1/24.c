@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <ctype.h> /* Para a funÁ„o isupper()*/
+#include <ctype.h> /* Para a fun√ß√£o isupper()*/
 #include <limits.h>
 #include <stdbool.h> /* para poder usar o true e o false*/
 
@@ -26,9 +26,9 @@ int main(){
     bool resultado=verif_Posi(numeros);
 
     if(resultado==true){
-        printf("Todos s„o positivos");
+        printf("Todos s√£o positivos");
     }
     else
-        printf("Nem todos s„o positivos");
+        printf("Nem todos s√£o positivos");
 
 }
