@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <ctype.h> /* Para a função isupper()*/
+#include <ctype.h> /* Para a funÃ§Ã£o isupper()*/
 #include <limits.h>
 
 int main(){
@@ -24,6 +24,6 @@ int main(){
         printf("simetrico");
     }
     else{
-         printf("Não simetrico");
+         printf("NÃ£o simetrico");
     }
 }
