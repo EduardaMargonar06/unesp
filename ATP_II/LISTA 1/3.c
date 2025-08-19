@@ -23,7 +23,7 @@ int main()
       num++;
     }
 
-    printf("Primeiros 7 números primos: \n");
+    printf("Primeiros 7 nÃºmeros primos: \n");
     for(int i=0; i<7;i++){
         printf("%d ", primos[i]);
     }
