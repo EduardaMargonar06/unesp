@@ -9,7 +9,7 @@ int main(){
         media += num;
     }
 
-    printf("A media é: %.2f", media/6.0);
+    printf("A media Ã©: %.2f", media/6.0);
 
 
 
