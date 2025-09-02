@@ -1,0 +1,187 @@
+/* Combined stylesheet generated from teste.zip */
+
+/* ===== from: teste/cardapio.html (inline <style> #1) ===== */
+img {
+    width: 200px;
+}
+p {
+    text-align: center;
+    font-size: 40px;
+    background-color: rgb(124, 161, 119);
+    font-weight: bold;
+    color: brown;
+}
+th {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #000000;
+    font-size: 22px;
+}
+td {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #000000;
+    font-size: 18px;
+}
+table {
+    width: 95%;
+    margin-left: 2.5%;
+    border: 1px solid #000000;
+    background-color: rgb(142, 177, 131);
+}
+body{
+    background-image: url(imagem/fundo2.png);
+    font-family: Arial, Helvetica, sans-serif;
+    image-resolution: 5%;
+}
+
+button{
+    background-color: rgb(156, 183, 231);
+    border-radius: 5px;
+    height: 20px;
+}
+
+.botoes{
+    background-color: rgb(156, 183, 231);
+    border-radius: 5px;
+    width: 10%;
+    height: 65px;
+    font-size: 25px;
+}
+
+
+img{
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 50%;
+}
+img:hover{
+    width: 250%; 
+    border-radius: 0%;  
+    margin-left: -105%; 
+    margin-top: -55%;
+           
+}
+
+a{
+    width: 5%;
+    margin-left: 45.5%;
+            
+}
+
+a:hover{
+    color:rgb(255, 2, 158); 
+        
+}
+       
+
+.table_component {
+    overflow: auto;
+    width: 100%;
+}
+
+.table_component table {
+    border: 1px solid #dededf;
+    height: 100%;
+    width: 100%;
+    table-layout: auto;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: center;
+}
+
+.table_component caption {
+    caption-side: top;
+    text-align: center;
+}
+
+.table_component th {
+    border: 1px solid #dededf;
+    background-color: #69b5e8;
+    color: #000000;
+    padding: 5px;
+}
+
+.table_component td {
+    border: 1px solid #dededf;
+    background-color: #e0f2ff;
+    color: #000000;
+    padding: 5px;
+}
+
+
+
+.table_component {
+    overflow: auto;
+    width: 100%;
+}
+
+.table_component table {
+    border: 1px solid #dededf;
+    height: 100%;
+    width: 100%;
+    table-layout: auto;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: center;
+}
+
+.table_component caption {
+    caption-side: top;
+    text-align: center;
+}
+
+.table_component th {
+    border: 1px solid #dededf;
+    background-color: #69b5e8;
+    color: #000000;
+    padding: 5px;
+}
+
+.table_component td {
+    border: 1px solid #dededf;
+    background-color: #e0f2ff;
+    color: #000000;
+    padding: 5px;
+}
+
+h3{
+    background-color: #FFD700;
+    text-align: center;
+    margin-top: 26%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 29px;
+}
+
+.page1{
+
+    background-image: url(../imagem/dudu_sorrino.jpeg);
+    
+}
+.page2{
+    background-image: url(../imagem/dudu.jpeg);
+   
+}
+input{
+    
+    font-size: 17px;
+    width: 250px;
+    height: 25px;
+}
+th{
+    font-size: 20px;
+    background-color: rgb(227, 227, 165);
+}
+.advance_page{
+    background-color: beige;
+    font-size: 35px;
+    height: 50px;
+    color: red;   
+}
+.advance_page:hover{
+    width: 50%;
+
+}
+.musica1{
+    margin-top: -54px;
+}
