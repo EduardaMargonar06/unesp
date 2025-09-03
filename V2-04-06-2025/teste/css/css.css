@@ -204,3 +204,10 @@ th{
     background-color: rgb(196, 222, 220);
 
 }
+.titulo_dados_dudu{
+    color: red;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 30%;
+  font-style: normal;
+}
