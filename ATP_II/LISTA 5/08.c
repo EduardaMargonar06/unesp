@@ -4,9 +4,9 @@
 
 int mdc(int a, int b) {
     if (b == 0) {
-        return a; // caso base: quando o resto é zero
+        return a; 
     } else {
-        return mdc(b, a % b); // chamada recursiva
+        return mdc(b, a % b); 
     }
 }
 
