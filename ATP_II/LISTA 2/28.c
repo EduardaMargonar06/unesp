@@ -1,72 +1,93 @@
-#include <stdlib.h>
 #include <stdio.h>
-#include <stdbool.h> /*para usar o true e o false*/
 #include <limits.h>
-#include <time.h> /*para usar o srand(time(NULL)); */
-
+#include <stdbool.h>
+#include <string.h>
+#include <stdlib.h>
 
 #define N 4
-void ordenar(int M[N][N]){
-    int temp;
-    for(int i=0; i<N*N-1; i++){
-        for(int j=i+1; j<N*N; j++){
-            int li = i / N, ci = i % N;  
-            int lj = j / N, cj = j % N;  
 
-            if(M[li][ci] > M[lj][cj]){
-                temp = M[li][ci];
-                M[li][ci] = M[lj][cj];
-                M[lj][cj] = temp;
+void coloc_vetor(int matriz[N][N], int vetor[], int n){
+    int k=0;
+        
+    for(int i=0; i<N;i++){
+        for(int j=0; j<N;j++){
+            vetor[k++]= matriz[i][j];
+        }
+    }
+}
+void ordenar(int array[], int n){
+    int temp;
+    for(int i=0; i< n-1;i++){
+        for(int j=0; j<n-i-1;j++){
+            if(array[j]>array[j+1]){
+                temp = array[j];
+                array[j]=array[j+1];
+                array[j+1]=temp;
             }
         }
     }
 }
 
-bool busca_binaria(int M[N][N], int x){
-    int inicio = 0, fim = N*N - 1;
+void matriz_orde(int vetor[], int n, int matriz[N][N]){
+    int k=0;
+     for(int i=0; i<N;i++){
+        for(int j=0; j<N;j++){
+            matriz[i][j] = vetor[k++];
+        }
+    }
+}
+
+int busca_bi(int matriz[N][N], int x){
+    int inicio = 0;
+    int fim = N*N - 1;
 
     while(inicio <= fim){
         int meio = (inicio + fim) / 2;
-        int i = meio / N, j = meio % N;
 
-        if(M[i][j] == x){
+        int i = meio / N;  
+        int j = meio % N; 
+
+        if(matriz[i][j] == x){
             printf("Elemento %d encontrado na posicao [%d][%d]\n", x, i, j);
-            return true;
+            return 1;
         }
-        else if(M[i][j] < x){
+        if(matriz[i][j] < x){
             inicio = meio + 1;
-        }
-        else{
+        } else {
             fim = meio - 1;
         }
     }
-    return false;
+    printf("Elemento %d nao encontrado na matriz.\n", x);
+    return 0;
 }
 
 int main(){
-  int matriz1[N][N], valor;
-      
-      
-      printf("Digite a matriz: \n");
-      for(int i=0;i<N;i++){
-          for(int j=0;j<N;j++){
-              scanf("%d", &matriz1[i][j]);
-          }
-      }
-      
-      
-    ordenar(matriz1);
-    printf("Matriz ordenada:\n");
+    int matriz[N][N],
+        n= N*N,
+        vetor[n];
+    
+    
+    printf("Digite a matriz: \n");
     for(int i=0;i<N;i++){
-    for(int j=0;j<N;j++){
-        printf("%d ", matriz1[i][j]);
+        for(int j=0;j<N;j++){
+            scanf("%d", &matriz[i][j]);
+        }
     }
-    printf("\n");
+    
+    coloc_vetor(matriz, vetor, n);
+    ordenar(vetor, n);
+   matriz_orde(vetor, n, matriz);
+   
+   printf("\nMatriz ordenada:\n");
+    for(int i=0; i<N; i++){
+        for(int j=0; j<N; j++){
+            printf("%3d ", matriz[i][j]);
+        }
+        printf("\n");
+    }
+    
+    printf("\nDigite um numero para buscar: ");
+    scanf("%d", &x);
 
-    printf("Digite o valor que deseja buscar: ");
-    scanf("%d", &valor);
-
-    if(!busca_binaria(matriz1, valor)){
-    printf("Elemento %d nao encontrado na matriz.\n", valor);
+    busca_bi(matriz, x);
 }
-}}
