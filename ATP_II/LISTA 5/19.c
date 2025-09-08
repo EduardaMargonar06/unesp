@@ -1,4 +1,7 @@
 #include <stdio.h>
+#include <limits.h>
+#include <stdbool.h>
+#include <string.h>
 
 int C(int n, int k){
     if(k==0 || k==n) return 1;
