@@ -1,4 +1,7 @@
 #include <stdio.h>
+#include <limits.h>
+#include <stdbool.h>
+#include <string.h>
 
 int raiz(int n, int baixo, int alto){
     if(baixo > alto) return alto;
